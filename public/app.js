@@ -13,10 +13,11 @@ const requestComplete = function(){
   displaySetup(shuffledAvas);
   const answer = shuffledAvas[1].data.selftext.toLowerCase().replace(/\W/g, ' ');
 
+  const callCheckFunction = function(){
+    checkAnswer(answer)}
+
   const answerButton = document.getElementById('submit-btn');
-  answerButton.addEventListener('click', function(){
-    checkAnswer(answer);
-  })
+  answerButton.addEventListener('click', callCheckFunction)
 
   const revealButton = document.getElementById('reveal-btn');
   revealButton.addEventListener('click', function(){
@@ -47,11 +48,11 @@ const checkAnswer = function(answer){
   const formBox = document.getElementById('avalanche');
   const answerText = document.getElementById('answer-text').value.toLowerCase().replace(/\W/g, ' ');
       if(answer === answerText){
-        alert("BAM! Spot on!")
+        swal("BAM! SPOT ON!", "refresh the page for a new avalanche", "success")
       }else if(answer.indexOf(answerText) > -1){
-      alert("BOOM! Close enough!");
+      swal("BOOM! CLOSE ENOUGH!", "refresh the page for a new avalanche", "success");
     } else {
-      alert("ooooh, not quite!")
+      swal("ooooh, not quite!", "try again or click 'reveal' for the answer", "error")
     }
   }
 

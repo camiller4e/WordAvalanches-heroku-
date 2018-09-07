@@ -5,6 +5,7 @@
     <title>🏔️</title>
     <link rel='stylesheet' type='text/css' href='style.css'>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="app.js"></script>
     <header>
       <a href="/"><h1>Word Avalanches</h1></a>
@@ -14,18 +15,19 @@
 
 
     <div id='ava-intro'>
-      Word Avalanches: incredibly contrived setups for homophonic punchlines.
+      <p>Word Avalanches: incredibly contrived setups for homophonic punchlines.</p>
+      <p>You can try to guess the punchline below or just click to reveal it. Literally no one will know! Just hit refresh for a new avalanche. Have fun!</p>
     </div>
 
     <div id='avalanche'>
     <div id='ava-setup'></div>
-    <form id='ava-input'>
+    <section id='ava-input'>
     <input type="text" name="ava-answer" id="answer-text">
     <br>
     <button id="submit-btn">Submit Answer</button>
     </input>
     <br>
-    </form>
+  </section>
     <div id='reveal-button'>
     <button id='reveal-btn'>Reveal Answer</button>
   </div>
