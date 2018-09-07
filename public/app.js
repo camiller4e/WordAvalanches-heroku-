@@ -9,7 +9,9 @@ const requestComplete = function(){
   const jsonString = this.responseText;
   const avalanches = JSON.parse(jsonString);
 
-  let shuffledAvas = _.shuffle(avalanches.data.children);
+  let trueAvalanches = _.tail(avalanches.data.children)
+
+  let shuffledAvas = _.shuffle(trueAvalanches);
   displaySetup(shuffledAvas);
   const answer = shuffledAvas[1].data.selftext.toLowerCase().replace(/\W/g, ' ');
 
