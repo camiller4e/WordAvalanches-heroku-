@@ -7,12 +7,11 @@
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="app.js"></script>
+  </head>
+  <body>
     <header>
       <a href="/"><h1>Word Avalanches</h1></a>
     </header>
-  </head>
-  <body>
-
 
     <div id='ava-intro'>
       <p>Word Avalanches: incredibly contrived setups for homophonic punchlines.</p>
@@ -20,26 +19,23 @@
     </div>
 
     <div id='avalanche'>
-    <div id='ava-setup'></div>
-    <section id='ava-input'>
-    <input type="text" name="ava-answer" id="answer-text">
-    <br>
-    <button id="submit-btn">Submit Answer</button>
-    </input>
-    <br>
-  </section>
-    <div id='reveal-button'>
-    <button id='reveal-btn'>Reveal Answer</button>
-  </div>
-    <div id='ava-payoff'></div>
+      <div id='ava-setup'></div>
+      <section id='ava-input'>
+        <input type="text" name="ava-answer" id="answer-text">
+        <br>
+      </section>
+      <button id="submit-btn">Submit Answer</button>
+      <button id='reveal-btn'>Reveal Answer</button>
+      <button id='refresh-btn'>New Avalanche</button>
+      <div id='ava-payoff'></div>
     </div>
+
     <footer>
       <div id="left-icons">
-        <a href="https://github.com/camiller4e"> <img src="icons/social-1_square-github.svg"></a>
-        <a href="https://www.reddit.com/r/WordAvalanches/"><img src="icons/social-1_square-reddit.svg"</a>
+        <a href="https://github.com/camiller4e"><img src="icons/social-1_square-github.svg"></a>
+        <a href="https://www.reddit.com/r/WordAvalanches/"><img src="icons/social-1_square-reddit.svg"></a>
         <a id="about" href="about.html">about</a>
       </div>
     </footer>
   </body>
-
 </html>

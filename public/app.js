@@ -25,6 +25,11 @@ const requestComplete = function(){
   revealButton.addEventListener('click', function(){
     displayPayoff(shuffledAvas);
   });
+
+  const refreshButton = document.getElementById('refresh-btn');
+  refreshButton.addEventListener('click', function() {
+    location.reload();
+  });
 }
 
 const displaySetup = function(shuffledAvas){
@@ -57,7 +62,6 @@ const checkAnswer = function(answer){
       swal("ooooh, not quite!", "try again or click 'reveal' for the answer", "error")
     }
   }
-
 
 
 
